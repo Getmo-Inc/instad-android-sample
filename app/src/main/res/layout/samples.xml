@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_ad_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show notification"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/btn_ad_interstitital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show interstitial"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/btn_ad_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show native"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/mccmnc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="GGGGGGG"/>
+
+    </LinearLayout>
+
+    <br.com.getmo.ads.AdView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        smartads:ADSize="BANNER"
+        smartads:ADUnitId="ABCDEF1234567890"/>
+
+</RelativeLayout>
